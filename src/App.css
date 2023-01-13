@@ -1,38 +1,275 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+
+  font-family: "Inter", sans-serif;
+}
+
+.aboutParentContainer {
+  /* background-color: aquamarine; */
+  max-width: 100%;
+  min-width: 100%;
+  margin: 5rem auto 0;
+  padding: 1rem 1rem 5rem 5rem;
+}
+
+.nameBorder {
+  /* background-color: black; */
+  min-width: 100%;
+  height: 1rem;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: left;
+
+  color: #3730a3;
+}
+
+.nameBorder .bordernameline {
+  border-bottom: 1px solid #3730a3;
+  width: 3%;
+  margin-bottom: 0.2rem;
+  margin-right: 0.6rem;
+}
+
+.aboutContainer {
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.leftSide {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+.leftSide h5 {
+  font-weight: 400;
+}
+
+.leftSide p {
+  margin-top: 1rem;
+  font-weight: 500;
+  font-family: "Inter", sans-serif;
+}
+
+.rightSide {
+  margin-left: 10rem;
+  min-width: 30%;
+  max-width: 30%;
+  max-height: 10px;
+  min-height: 10px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.profileImg {
+  border-radius: 1rem;
+  min-width: 300px;
+  min-height: 300px;
+  max-height: 300px;
+  box-shadow: -10.8px -10.8px 9.1px rgba(136, 2, 2, 0.38),
+    -17.7px -17.7px 21.9px rgba(127, 0, 0, 0.204),
+    -19.1px -19.1px 41.3px rgba(152, 11, 11, 0.15),
+    -11.6px -11.6px 73.7px rgba(132, 9, 9, 0.113),
+    13.3px 13.3px 137.9px rgba(0, 0, 0, 0.079),
+    100px 100px 330px rgba(0, 0, 0, 0.042);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Skills */
+
+.SkillsContainer {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+
+  padding-bottom: 3rem;
+  min-width: 100%;
+  min-height: 350px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.SkillsContainer div h2 {
+  font-size: 3rem;
+  font-weight: 500;
+  font-family: "Inter", sans-serif;
+}
+
+.SkillsContainer .flexContainer {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
+  gap: 3rem;
+}
+.SkillsContainer .flexContainer img {
+  max-width: 200px;
+  min-width: 100px;
+  max-height: 100px;
+  min-height: 100px;
+}
+.SkillsContainer .flexContainer .skillsname {
+  text-transform: uppercase;
+  color: #777777;
+  margin-top: 10px;
+}
+
+/* Profile */
+
+.Profileh2 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 500;
+  font-family: "Inter", sans-serif;
+  margin-bottom: 5rem;
+}
+
+.profileContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.profileContainer .profileBox {
+  width: 40%;
+  border-radius: 0.6rem;
+  padding: 1rem;
+  background-color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.profileContainer .profileBox .boxinbox {
+  display: flex;
+  flex-wrap: wrap;
+}
+.profileContainer .profileBox .boxinbox div:first-child {
+  margin-right: 1rem;
+  min-width: 8rem;
+  max-width: 8rem;
+}
+
+.profileContainer .profileIcerik {
+  padding: 1rem 1rem;
+  width: 50%;
+  text-align: justify;
+}
+
+.profileAllContainer {
+  width: 100%;
+  background: #f4f4f4;
+  padding-top: 3rem;
+  padding-bottom: 8rem;
+}
+
+/* Projects */
+
+.ProjectsAllContainer {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 3rem 3rem;
+}
+.ProjectsAllContainer h2 {
+  font-size: 3rem;
+  font-weight: 500;
+  font-family: "Inter", sans-serif;
+  margin-bottom: 2rem;
+}
+
+.projectsContainer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.portfolioCards {
+  min-width: 350px;
+  max-width: 30%;
+  margin-bottom: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-height: 700px;
+  border-radius: 0.6rem;
+  padding: 1rem;
+  background-color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.portfolioCards div img {
+  max-width: 350px;
+  max-height: 300px;
+  min-height: 300px;
+  padding-top: 1rem;
+  
+}
+
+.portfolioCards div h3 {
+  margin-top: 2rem;
+  text-transform: uppercase;
+}
+
+.portfolioCards .description {
+  text-align: justify;
+  margin-top: 1rem;
+  padding: 0 1rem;
+  margin-bottom: 1rem;
+}
+
+.dataTags {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-wrap: wrap;
+}
+
+.dataTags div {
+  padding: 0.2rem 1rem;
+  margin: 1rem 1rem 0.2rem 0rem;
+  text-align: center;
+  border: 1px solid #3730a3;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  cursor:default;
+  text-transform: capitalize;
+  text-decoration: none;
+  color: #3730a3;
+  border-radius: 10px;
+}
+
+.dataUrls {
+  margin-top: 1rem;
+  display: flex;
+}
+
+.dataUrls a {
+  padding: 0.2rem 1rem;
+  margin: 1rem 1rem 1rem 0rem;
+  text-align: center;
+  border: 1px solid #3730a3;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+  text-transform: capitalize;
+  text-decoration: none;
+  color: #3730a3;
+  border-radius: 10px;
+}
+.dataUrls a:hover {
+  background-color: #3730a3;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }

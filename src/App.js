@@ -1,24 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { Switch, Route } from "react-router-dom";
+import Home from "./components/Home";
+import resumeData from './data/data';
+import JavaScript from './components/Skills-Components/JavaScript';
+import Css from "./components/Skills-Components/Css";
+import Cypress from "./components/Skills-Components/Cypress";
+import ReactJs from "./components/Skills-Components/ReactJs";
+import Redux from "./components/Skills-Components/Redux";
+import Bootstrap from "./components/Skills-Components/Bootstrap";
+
 
 function App() {
+  const resume = resumeData["tr"];
+  console.log(resume);
+ 
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+
+      <Switch>
+        <Route exact path="/" component={Home} ></Route>
+
+        <Route exact path="/JavaScript" component={JavaScript}></Route>
+        <Route exact path="/ReactJs" component={ReactJs}></Route>
+        <Route exact path="/Redux" component={Redux}></Route>
+        <Route exact path="/Bootstrap" component={Bootstrap}></Route>
+        <Route exact path="/Cypress" component={Cypress}></Route>
+        <Route exact path="/Css" component={Css}></Route>
+    
+      </Switch>
+    </>
   );
 }
 
