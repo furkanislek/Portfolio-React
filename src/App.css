@@ -248,6 +248,11 @@
   text-decoration: none;
   color: #3730a3;
   border-radius: 10px;
+  text-transform: uppercase;
+}
+
+.dataTags div span {
+  font-size: 0.8rem;
 }
 
 .dataUrls {

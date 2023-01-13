@@ -127,7 +127,7 @@ let resumeData = {
       {
         name: "Tic Tac Toe",
         description: "Tic-Tac-Toe yani XOX oyunu. Bu oyunu sadece javascipt kullanarak yapıldı. Bu oyun sayesinde React Practicum'una katılma şansı yakaladım. Eğlenceli bir vakit geçirmek için oyunu deneyebilirsiniz.",
-        tags : ["javascript", "game", "tictactoe"],
+        tags : ["javascript", "game", "tic-tac-toe"],
         imgurl: "https://user-images.githubusercontent.com/76527169/192136695-376d1b2f-9427-4d80-a63a-de3d0559b5ae.png",
         githubUrl: "https://github.com/furkanislek/Tic-Tac-Toe",
         projectUrl : "https://furkanislek.github.io/Tic-Tac-Toe/"
