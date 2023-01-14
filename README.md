@@ -68,3 +68,68 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+.nameBorder {
+  /* background-color: black; */
+  min-width: 100%;
+  height: 1rem;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: left;
+
+  color: #3730a3;
+}
+
+.bordernameline {
+  border-bottom: 1px solid #3730a3;
+  width: 3%;
+  margin-bottom: 0.2rem;
+  margin-right: 0.6rem;
+}
+
+.aboutContainer {
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.leftSide {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+.leftSide h5 {
+  font-weight: 400;
+}
+
+.leftSide p {
+  margin-top: 1rem;
+  font-weight: 500;
+  font-family: "Inter", sans-serif;
+}
+
+.rightSide {
+  margin-left: 10rem;
+  max-width: 30%;
+  max-height: 10px;
+  text-align: center;
+}
+
+.profileImg {
+  border-radius: 1rem;
+  min-width: 300px;
+  min-height: 300px;
+  max-height: 300px;
+  box-shadow: -10.8px -10.8px 9.1px rgba(136, 2, 2, 0.38),
+    -17.7px -17.7px 21.9px rgba(127, 0, 0, 0.204),
+    -19.1px -19.1px 41.3px rgba(152, 11, 11, 0.15),
+    -11.6px -11.6px 73.7px rgba(132, 9, 9, 0.113),
+    13.3px 13.3px 137.9px rgba(0, 0, 0, 0.079),
+    100px 100px 330px rgba(0, 0, 0, 0.042);
+}

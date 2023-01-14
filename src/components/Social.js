@@ -2,65 +2,44 @@ import React from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import {MdEmail} from "react-icons/md"
 import styled from "styled-components";
+import { useSelector } from "react-redux";
+
 
 function Social() {
-  const GitIcon = styled.div`
-    display: flex;
-    justify-content: left;
-    
-    `;
-  const AElement = styled.a`
-    margin: 1rem 1rem 1rem 0rem;
-    text-align: center;
-    border: 1px solid #3730a3;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 20px 10px 12px;
-    gap: 10px;
-    cursor: pointer;
-    &:hover  {
-      background-color: #3730a3;
-      color: white;
-    }
-    text-decoration: none;
-    color : #3730a3;
-    border-radius : 10px
-  `;
+  const { dark } = useSelector((state) => state.site);
 
   return (
-    <GitIcon>
-      <AElement
+    <div className="socialGitIcon">
+      <a
         href="https://github.com/furkanislek"
         rel="noreferrer"
         target="_blank"
-        className="icons"
+        className={dark ? "socialADark" : "socialA"}
       >
-        <FaGithub />
+        <FaGithub className={dark ? "faColorDark" : "faColor"} />
         Github
-      </AElement>
+      </a>
 
-      <AElement
+      <a
         href="https://www.linkedin.com/in/furkanislek/"
         rel="noreferrer"
         target="_blank"
-        className="icons"
+        className={dark ? "socialADark" : "socialA"}
       >
         <FaLinkedin />
         Linkedin
-      </AElement>
+      </a>
 
-      <AElement
+      <a
         href="mailto:furkanakifislek@gmail.com"
         rel="noreferrer"
         target="_blank"
-        className="icons"
+        className={dark ? "socialADark" : "socialA"}
       >
         <MdEmail />
         E-Posta
-      </AElement>
-    </GitIcon>
+      </a>
+    </div>
   );
 }
 

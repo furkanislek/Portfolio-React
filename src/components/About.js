@@ -1,27 +1,27 @@
 import React from "react";
 import Social from "./Social";
-import profile from "./profile.jpg"
+import { useSelector } from "react-redux";
 function About({ props }) {
+  const { dark } = useSelector((state) => state.site);
+  console.log(props.imagebaseurl);
   return (
-    <div className="aboutParentContainer">
-      <div className="nameBorder">
-        <div className="bordernameline"></div>
-        <div>
-            {props.name}
-        </div>
-      </div>
+    <div className={dark ? "aboutAllContainerDark" : "aboutAllContainer"}>
       <div className="aboutContainer">
         <div className="leftSide">
-          <h5>Hi! 👋</h5>
-          <p>{props.roleDescription}</p>
+          <div className="nameBorder">
+            <div className="bordernameline"></div>
+            <h2 className={dark ? "aboutNameDark" : "aboutName"}>{props.name}</h2>
+          </div>
+          <h5 className={dark && "aboutWelcomeDark"}>{props.welcome} 👋</h5>
+          <p className={dark && "aboutWelcomeDark"}>{props.roleDescription}</p>
           <div>
             <Social />
           </div>
         </div>
         <div className="rightSide">
-            <div>
-                <img className="profileImg" src={profile} alt="İmg" />
-            </div>
+          <div>
+            <img className="profileImg" src={props.imagebaseurl} alt="İmg" />
+          </div>
         </div>
       </div>
     </div>

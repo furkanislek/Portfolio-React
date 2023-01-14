@@ -2,83 +2,136 @@
   margin: 0;
   padding: 0;
   font-size: 20px;
-
+  color: #1f2937;
   font-family: "Inter", sans-serif;
 }
 
-.aboutParentContainer {
-  /* background-color: aquamarine; */
+.languageBtn {
+  border: none;
+}
+
+.languageBtn img {
+  font-size: 2rem;
+}
+#root > div > div.sc-bcXHqe.dvSGaw > div > button.languageBtn > img {
+
+  scale: 1.4;
+}
+.active {
+  background-color: #af0c48;
+  color: wheat;
+}
+
+/* About */
+
+.aboutAllContainer {
+  width: 100%;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
   max-width: 100%;
-  min-width: 100%;
-  margin: 5rem auto 0;
-  padding: 1rem 1rem 5rem 5rem;
 }
 
-.nameBorder {
-  /* background-color: black; */
-  min-width: 100%;
-  height: 1rem;
-  margin-top: 1rem;
-  display: flex;
-  justify-content: left;
-
-  color: #3730a3;
-}
-
-.nameBorder .bordernameline {
-  border-bottom: 1px solid #3730a3;
-  width: 3%;
-  margin-bottom: 0.2rem;
-  margin-right: 0.6rem;
+.aboutAllContainerDark {
+  background-color: #232228;
+  width: 100%;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  max-width: 100%;
 }
 
 .aboutContainer {
   display: flex;
-  justify-content: left;
   flex-wrap: wrap;
-  margin-top: 1rem;
+  justify-content: center;
 }
 
 .leftSide {
-  width: 50%;
+  max-width: 50%;
+  min-width: 500px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding: 2rem 0;
+  justify-content: space-around;
+  min-height: 250px;
 }
 
-.leftSide h5 {
-  font-weight: 400;
+.aboutName {
+  font-size: 1.5rem;
+  font-style: italic;
+}
+.aboutNameDark {
+  color: #dfdfdf;
+  font-size: 1.5rem;
+  font-style: italic;
 }
 
-.leftSide p {
-  margin-top: 1rem;
-  font-weight: 500;
-  font-family: "Inter", sans-serif;
+.aboutWelcomeDark {
+  color: #ada9bd;
 }
 
 .rightSide {
-  margin-left: 10rem;
-  min-width: 30%;
-  max-width: 30%;
-  max-height: 10px;
-  min-height: 10px;
-  text-align: center;
+  margin-left: 2rem;
 }
 
 .profileImg {
-  border-radius: 1rem;
-  min-width: 300px;
-  min-height: 300px;
-  max-height: 300px;
-  box-shadow: -10.8px -10.8px 9.1px rgba(136, 2, 2, 0.38),
-    -17.7px -17.7px 21.9px rgba(127, 0, 0, 0.204),
-    -19.1px -19.1px 41.3px rgba(152, 11, 11, 0.15),
-    -11.6px -11.6px 73.7px rgba(132, 9, 9, 0.113),
-    13.3px 13.3px 137.9px rgba(0, 0, 0, 0.079),
-    100px 100px 330px rgba(0, 0, 0, 0.042);
+  width: 160px;
+  height: 150px;
 }
 
+.socialGitIcon {
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
+}
+
+.socialA {
+  margin: 1rem 1rem 1rem 0rem;
+  min-width: 150px;
+  text-align: center;
+  border: 1px solid #3730a3;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px 10px 12px;
+  gap: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #3730a3;
+  border-radius: 10px;
+}
+.socialADark {
+  margin: 1rem 1rem 1rem 0rem;
+  min-width: 150px;
+  text-align: center;
+  border: 1px solid #aeaeb6;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px 10px 12px;
+  gap: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #dfdfdf;
+  /* background-color: #0a66c2; */
+  border-radius: 10px;
+}
+
+.socialA:hover {
+  background-color: #3730a3;
+  color: white;
+}
+.socialADark:hover {
+  background-color: #636364;
+  color: white;
+}
+
+#root > div > div.aboutAllContainer > div > div.leftSide > div:nth-child(4) > div > a > svg > path {
+  color: black;
+}
+#root > div > div.aboutAllContainerDark > div > div.leftSide > div:nth-child(4) > div > a> svg > path {
+  color: rgb(247, 247, 247);
+}
 /* Skills */
 
 .SkillsContainer {
@@ -88,40 +141,75 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
-
   padding-bottom: 3rem;
   min-width: 100%;
   min-height: 350px;
 }
 
-.SkillsContainer div h2 {
+.skillsh2 {
   font-size: 3rem;
   font-weight: 500;
   font-family: "Inter", sans-serif;
 }
 
-.SkillsContainer .flexContainer {
+.skillsflexContainer {
   margin-top: 2rem;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   padding: 0px;
   gap: 3rem;
 }
-.SkillsContainer .flexContainer img {
+
+.skillsImg {
   max-width: 200px;
   min-width: 100px;
   max-height: 100px;
   min-height: 100px;
 }
-.SkillsContainer .flexContainer .skillsname {
+
+.skillsname {
   text-transform: uppercase;
   color: #777777;
   margin-top: 10px;
 }
 
+.SkillsContainerDark {
+  background-color: #27262c;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 3rem;
+  min-width: 100%;
+  min-height: 350px;
+}
+
+.skillsh2Dark {
+  font-size: 3rem;
+  font-weight: 500;
+  font-family: "Inter", sans-serif;
+  color: #dfdfdf;
+}
+
 /* Profile */
+
+.profileAllContainer {
+  width: 100%;
+  background: #f4f4f4;
+  padding-top: 3rem;
+  padding-bottom: 8rem;
+}
+
+.profileAllContainerDark {
+  width: 100%;
+  background: #232228;
+  padding-top: 3rem;
+  padding-bottom: 8rem;
+}
 
 .Profileh2 {
   text-align: center;
@@ -131,43 +219,111 @@
   margin-bottom: 5rem;
 }
 
+.profilePersonalInformation {
+  color: #ea2678;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+.profilePersonalInformationDark {
+  color: #f0f0f0;
+  margin-bottom: 10px;
+  font-weight: 800;
+}
+
 .profileContainer {
   display: flex;
   justify-content: space-between;
   width: 70%;
+  padding: 0;
   margin: 0 auto;
   flex-wrap: wrap;
 }
 
-.profileContainer .profileBox {
-  width: 40%;
+.profileBox {
+  width: 30%;
+  min-width: 600px;
   border-radius: 0.6rem;
   padding: 1rem;
   background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
     rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
-.profileContainer .profileBox .boxinbox {
+
+.profileBoxDark {
+  width: 30%;
+  min-width: 600px;
+  border-radius: 0.6rem;
+  padding: 1rem;
+  background-color: #484651;
   display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.boxinbox {
+  display: flex;
+
   flex-wrap: wrap;
 }
-.profileContainer .profileBox .boxinbox div:first-child {
+.boxinbox div:first-child {
   margin-right: 1rem;
   min-width: 8rem;
   max-width: 8rem;
 }
 
 .profileContainer .profileIcerik {
-  padding: 1rem 1rem;
-  width: 50%;
+  /* margin-top: 2rem; */
+
+  padding-left: 2rem;
+  padding-top: 2rem;
+  /* padding: 1rem 1rem; */
+  width: 40%;
+  min-width: 600px !important;
   text-align: justify;
+  min-width: 300px;
+  border-radius: 0.6rem;
+  padding: 1rem;
 }
 
-.profileAllContainer {
-  width: 100%;
-  background: #f4f4f4;
-  padding-top: 3rem;
-  padding-bottom: 8rem;
+/* Dark */
+
+.Profileh2Dark {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 500;
+  font-family: "Inter", sans-serif;
+  margin-bottom: 5rem;
+  color: #dfdfdf;
+  text-shadow: -1px 1px 5px rgba(223, 223, 223, 0.11);
+}
+.PofileTitlesdark {
+  /* color: #FDFDFD; */
+  color: #f8f8f8;
+}
+
+.profileDataDark {
+  color: #ada9bd;
+}
+
+.profileIcerikTitle {
+  margin: 0.2rem 0 0.5rem;
+  /* color: #dfdfdf; */
+}
+
+.profileIcerikTitleDark {
+  margin: 0.2rem 0 0.5rem;
+  color: #dfdfdf;
+}
+
+.profileIcerikDataDark {
+  color: #ada9bd;
 }
 
 /* Projects */
@@ -212,12 +368,13 @@
   max-height: 300px;
   min-height: 300px;
   padding-top: 1rem;
-  
 }
 
 .portfolioCards div h3 {
   margin-top: 2rem;
   text-transform: uppercase;
+  font-family: "Alegreya", serif;
+  font-size: 1.3rem;
 }
 
 .portfolioCards .description {
@@ -243,7 +400,7 @@
   justify-content: center;
   align-items: center;
   gap: 10px;
-  cursor:default;
+  cursor: default;
   text-transform: capitalize;
   text-decoration: none;
   color: #3730a3;
@@ -277,4 +434,95 @@
 .dataUrls a:hover {
   background-color: #3730a3;
   color: white;
+}
+
+/* Footer */
+
+.FooterAllContainer {
+  width: 100%;
+  background-color: #f4f4f4;
+}
+
+.FooterAllContainer {
+  padding: 3rem 0 4rem;
+  max-width: 60%;
+  margin: 0 auto;
+  display: flex;
+  /* background-color: aqua; */
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.FooterContainer h2 {
+  font-family: "Alegreya", serif;
+  font-weight: 600;
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  color: #1f2937;
+}
+
+.FooterContainer .footerdescription {
+  font-family: "Alegreya", serif;
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+  color: #1f2937;
+}
+
+.FooterContainer .footermail {
+  margin-bottom: 1.5rem;
+  text-decoration: none;
+}
+
+.FooterContainer .footermail a {
+  font-family: "Alegreya", serif;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #af0c48;
+  font-weight: 500;
+}
+
+.FooterContainer > .iconsdiv {
+  display: flex;
+  justify-content: center;
+}
+
+.FooterContainer > .iconsdiv > a > svg {
+  margin-right: 2rem;
+  font-size: 2rem;
+}
+
+#root
+  > div
+  > div.FooterAllContainer
+  > div
+  > div.iconsdiv
+  > a:nth-child(1)
+  > svg
+  > path {
+  color: black;
+}
+
+#root
+  > div
+  > div.FooterAllContainer
+  > div
+  > div.iconsdiv
+  > a:nth-child(2)
+  > svg
+  > path {
+  color: #0a66c2;
+}
+
+#root
+  > div
+  > div.FooterAllContainer
+  > div
+  > div.iconsdiv
+  > a:nth-child(3)
+  > svg
+  > path {
+  color: #ff0000;
 }

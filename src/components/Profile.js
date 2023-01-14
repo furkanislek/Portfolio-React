@@ -1,30 +1,39 @@
 import React from "react";
+import { useSelector } from "react-redux";
 
 function Profile({ props }) {
-
-
+  const { dark } = useSelector((state) => state.site);
+  console.log("dark mode : ", dark);
   console.log(props.profileArticle.title);
   return (
-    <div className="profileAllContainer">
-      <h2 className="Profileh2">Profile Page</h2>
+    <div className={dark ? "profileAllContainerDark" : "profileAllContainer"}>
+      <h2 className={dark ? "Profileh2Dark" : "Profileh2"}>Profile Page</h2>
       <div className="profileContainer">
-        <div className="profileBox">
-          <h5 style={{ color: "#EA2678", marginBottom: "10px" }}>
+        <div className={dark ? "profileBoxDark" : "profileBox"}>
+          <h5
+            className={
+              dark
+                ? "profilePersonalInformationDark"
+                : "profilePersonalInformation"
+            }
+          >
             {props.kisiselBilgiler}
           </h5>
           {props.kisiselBilgilerIcerik.map((data) => (
             <div className="boxinbox">
+              {/* className="darkPofileTitles" */}
               <div>
-                <b>{data.title}</b>
+                <b className={dark && "PofileTitlesdark"}>{data.title}</b>
               </div>
-              <div>{data.data}</div>
+              {/* className="profileDataDark" */}
+              <div className={dark && "profileDataDark"}>{data.data}</div>
             </div>
           ))}
         </div>
         <div className="profileIcerik">
-          <div style={{ padding: "0.7rem 2rem" }}>
-            <h5>{props.profileArticle.title}</h5>
-            <p>{props.profileArticle.data}</p>
+          <div>
+            <h5 className={dark ? "profileIcerikTitleDark" : "profileIcerikTitle"}>{props.profileArticle.title}</h5>
+            <p className={dark && "profileIcerikDataDark"}> {props.profileArticle.data}</p>
           </div>
         </div>
       </div>

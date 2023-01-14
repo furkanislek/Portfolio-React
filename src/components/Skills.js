@@ -1,26 +1,26 @@
 import React from "react";
-
-import { Route, Switch, Link } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 function Skills({ props }) {
+  const { dark } = useSelector((state) => state.site);
   console.log(props.skills);
   return (
-    <div className="SkillsContainer">
+    <div className={dark ? "SkillsContainerDark" : "SkillsContainer"}>
       <div>
-        <h2>
+        <h2 className={dark ? "skillsh2Dark" : "skillsh2"}>
           {props.skillsTitle}
         </h2>
       </div>
-      <div className="flexContainer">
+      <div className="skillsflexContainer">
         {props.skills.map((skills, index) => (
-          <Link to={skills.skillname} style={{textDecoration: 'none' }}>
+          <div style={{textDecoration: 'none' }}>
             <div>
-              <img key={index} alt="png" src={skills.skillurl} />
+              <img className="skillsImg" key={index} alt="png" src={skills.skillurl} />
             </div>
             <div key={index} className="skillsname">
               {skills.skillname}
             </div>
-          </Link>
+          </div>
         ))}
       </div>
 
