@@ -7,11 +7,12 @@ import { useSelector, useDispatch } from "react-redux";
 import Profile from "./Profile";
 import Projects from "./Projects";
 import Footer from "./Footer";
+import Nav from "./Nav";
 
 function Home() {
   const site = useSelector((state) => state.site);
   const dispatch = useDispatch();
-  const dilSecenegi = resumeData[site.language];
+  const dilSecenegi = site.language ? resumeData["en"] : resumeData["tr"];
   console.log("dilSecenegi", dilSecenegi);
 
   const AllContainer = styled.div`
@@ -25,9 +26,9 @@ function Home() {
 
   return (
     <AllContainer className={dark ? "dark" : ""}>
-      <Header props={dilSecenegi} />
-
+      <Nav props={dilSecenegi} />
       <About props={dilSecenegi} />
+
 
       <Skills props={dilSecenegi} />
       <Profile props={dilSecenegi} />

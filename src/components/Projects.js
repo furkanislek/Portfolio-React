@@ -1,26 +1,64 @@
 import React from "react";
 import { FaGithub, FaGlobe } from "react-icons/fa";
+import { useSelector } from "react-redux";
 
 function Projects({ props }) {
+  const { dark } = useSelector((state) => state.site);
   return (
-    <div className="ProjectsAllContainer">
-      <h2>{props.projectsTitle}</h2>
+    <div id="projects"
+      className={!dark ? "ProjectsAllContainer" : "ProjectsAllContainerDark"}
+    >
+      <h2
+        className={
+          !dark ? "projectsTitleh2" : "projectsTitleh2 projectsTitleh2Dark"
+        }
+      >
+        {props.projectsTitle}
+      </h2>
       <div className="projectsContainer">
         {props.portfolio.map((data, index) => (
-          <div className="portfolioCards" key={index}>
+          <div
+            className={!dark ? "portfolioCards" : "portfolioCardsDark"}
+            key={index}
+          >
             <div>
               <a href={data.projectUrl} target="_blank" rel="noreferrer">
-                <img src={data.imgurl} alt="img" />
+                <img className="projectsImgs" src={data.imgurl} alt="img" />
               </a>
             </div>
             <div>
-              <h3>{data.name}</h3>
+              <h3
+                className={
+                  !dark
+                    ? "projectsdataname"
+                    : "projectsdataname projectsdatanameDark "
+                }
+              >
+                {data.name}
+              </h3>
             </div>
-            <div className="description">{data.description}</div>
+            <div
+              className={!dark ? "description" : "description descriptionDark"}
+            >
+              {data.description}
+            </div>
             <div className="dataTags">
               {data.tags.map((dataTag, index) => (
-                <div key={index}>
-                  <span>{dataTag}</span>
+                <div
+                  className={
+                    !dark ? "dataTagsChildrenDiv" : "dataTagsChildrenDivDark"
+                  }
+                  key={index}
+                >
+                  <span
+                    className={
+                      !dark
+                        ? "dataTagsChildrenDivSpan"
+                        : " dataTagsChildrenDivSpanDark"
+                    }
+                  >
+                    {dataTag}
+                  </span>
                 </div>
               ))}
             </div>
@@ -29,7 +67,7 @@ function Projects({ props }) {
                 href={data.githubUrl}
                 rel="noreferrer"
                 target="_blank"
-                className="icons"
+                className={!dark ? "dataUrlsATags" : "dataUrlsATagsDark"}
               >
                 <FaGithub />
                 Github
@@ -38,10 +76,10 @@ function Projects({ props }) {
                 href={data.projectUrl}
                 rel="noreferrer"
                 target="_blank"
-                className="icons"
+                className={!dark ? "dataUrlsATags" : "dataUrlsATagsDark"}
               >
                 <FaGlobe />
-                View Site
+                {data.site}
               </a>
             </div>
           </div>

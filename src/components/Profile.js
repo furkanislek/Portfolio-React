@@ -6,8 +6,10 @@ function Profile({ props }) {
   console.log("dark mode : ", dark);
   console.log(props.profileArticle.title);
   return (
-    <div className={dark ? "profileAllContainerDark" : "profileAllContainer"}>
-      <h2 className={dark ? "Profileh2Dark" : "Profileh2"}>Profile Page</h2>
+    <div id="about" className={dark ? "profileAllContainerDark" : "profileAllContainer"}>
+      <h2 className={dark ? "Profileh2Dark" : "Profileh2"}>
+        {props.aboutTitle}
+      </h2>
       <div className="profileContainer">
         <div className={dark ? "profileBoxDark" : "profileBox"}>
           <h5
@@ -32,8 +34,15 @@ function Profile({ props }) {
         </div>
         <div className="profileIcerik">
           <div>
-            <h5 className={dark ? "profileIcerikTitleDark" : "profileIcerikTitle"}>{props.profileArticle.title}</h5>
-            <p className={dark && "profileIcerikDataDark"}> {props.profileArticle.data}</p>
+            <h5
+              className={dark ? "profileIcerikTitleDark" : "profileIcerikTitle"}
+            >
+              {props.profileArticle.title}
+            </h5>
+            <p className={dark && "profileIcerikDataDark"}>
+              {" "}
+              {props.profileArticle.data}
+            </p>
           </div>
         </div>
       </div>

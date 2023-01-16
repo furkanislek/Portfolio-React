@@ -5,14 +5,14 @@ export const site = createSlice({
   name: "siteSettings",
   initialState: {
     dark: false,
-    language: "tr",
+    language: true,
   },
   reducers: {
     setDarkMode: (state) => {
       state.dark = !state.dark;
     },
-    setLanguage: (state, action) => {
-      state.language = action.payload;
+    setLanguage: (state) => {
+      state.language = !state.language;
     },
   },
 });

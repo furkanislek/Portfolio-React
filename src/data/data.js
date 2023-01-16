@@ -4,6 +4,8 @@ let resumeData = {
     kisiselBilgiler: "Kişisel Bilgiler",
     skillsTitle: "Program Bilgisi",
     projectsTitle: "Projeler",
+    aboutTitle: "Hakkımda",
+    email: "E-Posta",
     welcome: "Selam",
     kisiselBilgilerIcerik: [
       { title: "Doğum Tarihi", data: "01.11.1998" },
@@ -122,6 +124,7 @@ let resumeData = {
           "https://user-images.githubusercontent.com/76527169/190879487-948d6e29-1e1d-4658-9106-8659ed414c3f.png",
         githubUrl: "https://github.com/furkanislek/Fimple-Credit-Calculate",
         projectUrl: "https://furkancreditcalculate.web.app/",
+        site: "Demo Site",
       },
       {
         name: "Tic Tac Toe",
@@ -132,6 +135,7 @@ let resumeData = {
           "https://user-images.githubusercontent.com/76527169/192136695-376d1b2f-9427-4d80-a63a-de3d0559b5ae.png",
         githubUrl: "https://github.com/furkanislek/Tic-Tac-Toe",
         projectUrl: "https://furkanislek.github.io/Tic-Tac-Toe/",
+        site: "Demo Site",
       },
       {
         name: "Hafıza Kartları Oyunu",
@@ -142,6 +146,7 @@ let resumeData = {
           "https://user-images.githubusercontent.com/76527169/193851383-942a7edd-13a7-4a04-99a3-b062fe868492.png",
         githubUrl: "https://github.com/furkanislek/Memory-Card",
         projectUrl: "https://mellow-valkyrie-2bc7de.netlify.app/",
+        site: "Demo Site",
       },
       {
         name: "Pizza Form",
@@ -152,6 +157,7 @@ let resumeData = {
           "https://awesomescreenshot.s3.amazonaws.com/image/3953191/36127045-1a1ba9123dfb633ff3c532f3e19d2510.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJSCJQ2NM3XLFPVKA%2F20230113%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230113T190116Z&X-Amz-Expires=28800&X-Amz-SignedHeaders=host&X-Amz-Signature=5d9354620ea742fc7737a7c3c4029f507b6435a9c3e388ed46fab6a9877f7c4e",
         githubUrl: "https://github.com/furkanislek/FSWeb-S7-Challenge",
         projectUrl: "https://github.com/furkanislek/FSWeb-S7-Challenge",
+        site: "Demo Site",
       },
       {
         name: "Async Redux Hobiler",
@@ -162,16 +168,18 @@ let resumeData = {
           "https://user-images.githubusercontent.com/76527169/193851383-942a7edd-13a7-4a04-99a3-b062fe868492.png",
         githubUrl: "https://github.com/furkanislek/Memory-Card",
         projectUrl: "https://mellow-valkyrie-2bc7de.netlify.app/",
+        site: "Demo Site",
       },
       {
-        name: "Async Redux Hobiler",
+        name: "Quiz Uygulaması",
         description:
-          "Async Redux kullanarak can sıkıntınızı giderebilecek hobiler sunan ufak bir web uygulaması. Bored Api'den çekilen veriler redux state management yöntemi ile kaydedilebiliyor, beğenilebiliyor.",
-        tags: ["react", "redux", "axios"],
+          "React ile yapılan bu projede sırasıyla soruları cevaplayabilir, test bitiminde doğru sayınızı görebilirsiniz. İstediğiniz kadar soru ekleyip çıkarabilirsiniz.",
+        tags: ["react", "quiz", "quizapp"],
         imgurl:
-          "https://user-images.githubusercontent.com/76527169/193851383-942a7edd-13a7-4a04-99a3-b062fe868492.png",
-        githubUrl: "https://github.com/furkanislek/Memory-Card",
-        projectUrl: "https://mellow-valkyrie-2bc7de.netlify.app/",
+          "https://user-images.githubusercontent.com/76527169/212535326-7a9122a0-979a-44e3-b47f-8aa26674954e.png",
+        githubUrl: "https://github.com/furkanislek/Quiz-App/",
+        projectUrl: "https://quiz-app-liart-alpha.vercel.app/",
+        site: "Demo Site",
       },
     ],
     footer: {
@@ -182,11 +190,20 @@ let resumeData = {
       linkedinUrl: "https://www.linkedin.com/in/furkanislek/",
       youtube: "https://www.youtube.com/channel/UCUlJmYsaZ0d8enTA_ZRTKtw",
     },
+    navbar : {
+      profile : "Profil",
+      skills : "Program Bilgisi",
+      about : "Hakkımda",
+      projects : "Projeler",
+      contact : "İletişim"
+    }
   },
   en: {
     karanlıkMode: "Karanlık Mod",
     kisiselBilgiler: "Personal Information",
     skillsTitle: "Skills",
+    aboutTitle: "About Me",
+    email: "Email",
     projectsTitle: "Projects",
     welcome: "Hi",
     kisiselBilgilerIcerik: [
@@ -306,6 +323,7 @@ let resumeData = {
           "https://user-images.githubusercontent.com/76527169/190879487-948d6e29-1e1d-4658-9106-8659ed414c3f.png",
         githubUrl: "https://github.com/furkanislek/Fimple-Credit-Calculate",
         projectUrl: "https://furkancreditcalculate.web.app/",
+        site: "View Site",
       },
       {
         name: "Tic Tac Toe",
@@ -316,6 +334,7 @@ let resumeData = {
           "https://user-images.githubusercontent.com/76527169/192136695-376d1b2f-9427-4d80-a63a-de3d0559b5ae.png",
         githubUrl: "https://github.com/furkanislek/Tic-Tac-Toe",
         projectUrl: "https://furkanislek.github.io/Tic-Tac-Toe/",
+        site: "View Site",
       },
       {
         name: "Hafıza Kartları Oyunu",
@@ -326,6 +345,7 @@ let resumeData = {
           "https://user-images.githubusercontent.com/76527169/193851383-942a7edd-13a7-4a04-99a3-b062fe868492.png",
         githubUrl: "https://github.com/furkanislek/Memory-Card",
         projectUrl: "https://mellow-valkyrie-2bc7de.netlify.app/",
+        site: "View Site",
       },
       {
         name: "Pizza Form",
@@ -336,6 +356,7 @@ let resumeData = {
           "https://awesomescreenshot.s3.amazonaws.com/image/3953191/36127045-1a1ba9123dfb633ff3c532f3e19d2510.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJSCJQ2NM3XLFPVKA%2F20230113%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230113T190116Z&X-Amz-Expires=28800&X-Amz-SignedHeaders=host&X-Amz-Signature=5d9354620ea742fc7737a7c3c4029f507b6435a9c3e388ed46fab6a9877f7c4e",
         githubUrl: "https://github.com/furkanislek/FSWeb-S7-Challenge",
         projectUrl: "https://github.com/furkanislek/FSWeb-S7-Challenge",
+        site: "View Site",
       },
       {
         name: "Async Redux Hobiler",
@@ -346,16 +367,18 @@ let resumeData = {
           "https://user-images.githubusercontent.com/76527169/193851383-942a7edd-13a7-4a04-99a3-b062fe868492.png",
         githubUrl: "https://github.com/furkanislek/Memory-Card",
         projectUrl: "https://mellow-valkyrie-2bc7de.netlify.app/",
+        site: "View Site",
       },
       {
-        name: "Async Redux Hobiler",
+        name: "Quiz App",
         description:
-          "A small web application that offers hobbies to relieve boredom using Async Redux. Data obtained from the Bored Api can be saved and liked using the Redux state management method.",
-        tags: ["react", "redux", "axios"],
+          "In this project I made using React, you can answer the questions in order and see your correct number at the end of the test. You can add or remove as many questions as you want.",
+        tags: ["react", "quiz", "quizapp"],
         imgurl:
-          "https://user-images.githubusercontent.com/76527169/193851383-942a7edd-13a7-4a04-99a3-b062fe868492.png",
-        githubUrl: "https://github.com/furkanislek/Memory-Card",
-        projectUrl: "https://mellow-valkyrie-2bc7de.netlify.app/",
+          "https://user-images.githubusercontent.com/76527169/212535326-7a9122a0-979a-44e3-b47f-8aa26674954e.png",
+        githubUrl: "https://github.com/furkanislek/Quiz-App/",
+        projectUrl: "https://quiz-app-liart-alpha.vercel.app/",
+        site: "View Site",
       },
     ],
     footer: {
@@ -365,6 +388,13 @@ let resumeData = {
       linkedinUrl: "https://www.linkedin.com/in/furkanislek/",
       youtube: "https://www.youtube.com/channel/UCUlJmYsaZ0d8enTA_ZRTKtw",
     },
+    navbar : {
+      profile : "Profile",
+      skills : "Skills",
+      about : "About Me",
+      projects : "Projects",
+      contact : "Hire Me"
+    }
   },
 
   // en: {

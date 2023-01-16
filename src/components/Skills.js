@@ -5,7 +5,7 @@ function Skills({ props }) {
   const { dark } = useSelector((state) => state.site);
   console.log(props.skills);
   return (
-    <div className={dark ? "SkillsContainerDark" : "SkillsContainer"}>
+    <div id="skills" className={dark ? "SkillsContainerDark" : "SkillsContainer"}>
       <div>
         <h2 className={dark ? "skillsh2Dark" : "skillsh2"}>
           {props.skillsTitle}

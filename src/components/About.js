@@ -5,17 +5,17 @@ function About({ props }) {
   const { dark } = useSelector((state) => state.site);
   console.log(props.imagebaseurl);
   return (
-    <div className={dark ? "aboutAllContainerDark" : "aboutAllContainer"}>
+    <div id="profile" className={dark ? "aboutAllContainerDark" : "aboutAllContainer"}>
       <div className="aboutContainer">
         <div className="leftSide">
           <div className="nameBorder">
             <div className="bordernameline"></div>
-            <h2 className={dark ? "aboutNameDark" : "aboutName"}>{props.name}</h2>
+            {/* <h2 className={dark ? "aboutNameDark" : "aboutName"}>{props.name}</h2> */}
           </div>
           <h5 className={dark && "aboutWelcomeDark"}>{props.welcome} 👋</h5>
           <p className={dark && "aboutWelcomeDark"}>{props.roleDescription}</p>
           <div>
-            <Social />
+            <Social props={props} />
           </div>
         </div>
         <div className="rightSide">

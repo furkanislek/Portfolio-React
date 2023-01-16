@@ -5,7 +5,7 @@ import styled from "styled-components";
 import { useSelector } from "react-redux";
 
 
-function Social() {
+function Social({props}) {
   const { dark } = useSelector((state) => state.site);
 
   return (
@@ -37,7 +37,7 @@ function Social() {
         className={dark ? "socialADark" : "socialA"}
       >
         <MdEmail />
-        E-Posta
+        {props.email}
       </a>
     </div>
   );
