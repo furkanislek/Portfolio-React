@@ -5,7 +5,7 @@ import Flag from "react-flagkit";
 import { MdDarkMode } from "react-icons/md";
 import { FaRegLightbulb } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
-import Skills from './Skills';
+import { Link } from "react-router-dom";
 
 function Nav({ props }) {
   const { dark } = useSelector((state) => state.site);
@@ -28,9 +28,16 @@ function Nav({ props }) {
       <nav
         id="nav1"
         className={dark ? "NavAllContainerDark" : "NavAllContainer"}
-      > <div className="navLeft">
-        <h2 style={{color : "white"}}>Furkan Akif İŞLEK</h2>
-      </div>
+      >
+        {" "}
+        <div className="navLeft">
+          <h2 style={{ color: "white" }}>
+            <a style={{ color: "white", textDecoration: "none" }} href="#">
+              {" "}
+              Furkan Akif İŞLEK
+            </a>
+          </h2>
+        </div>
         <div className="navRight">
           <div className="parentATags">
             <a className="profileATags" href="#profile">
@@ -39,27 +46,23 @@ function Nav({ props }) {
           </div>
           <div className="parentATags">
             <a className="profileATags" href="#skills">
-            {props.navbar.skills}
-
+              {props.navbar.skills}
             </a>
           </div>
 
           <div className="parentATags">
             <a className="profileATags" href="#about">
-            {props.navbar.about}
-
+              {props.navbar.about}
             </a>
           </div>
           <div className="parentATags">
             <a className="profileATags" href="#projects">
-            {props.navbar.projects}
-
+              {props.navbar.projects}
             </a>
           </div>
           <div className="parentATags">
             <a className="profileATags" href="#contact">
-            {props.navbar.contact}
-
+              {props.navbar.contact}
             </a>
           </div>
           <div className="darkmode" onClick={handleDarkMode}>
@@ -102,7 +105,12 @@ function Nav({ props }) {
           </div>
         </div>
       </nav>
-      <nav id="nav2" className={dark ? "hamburgerMenuAllContainerDark" : "hamburgerMenuAllContainer" }>
+      <nav
+        id="nav2"
+        className={
+          dark ? "hamburgerMenuAllContainerDark" : "hamburgerMenuAllContainer"
+        }
+      >
         <div className="hamburgerFlexContainer">
           <div className="darkmode" onClick={handleDarkMode}>
             {!site.dark ? (

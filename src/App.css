@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   font-size: 20px;
-  color: #1f2937;
+  color: #000b1a;
   font-family: "Inter", sans-serif;
 }
 
@@ -41,7 +41,12 @@
   justify-content: space-around;
   align-items: center;
   position: fixed;
-  background-color: #020025;
+  background: -webkit-linear-gradient(
+    58deg,
+    rgba(2, 0, 37, 1) 0%,
+    rgba(0, 37, 108, 1) 54%,
+    rgba(0, 16, 94, 1) 100%
+  );
   padding: 0.6rem 1rem;
   box-shadow: rgba(153, 153, 153, 0.2) 0px 7px 29px 0px;
 }
@@ -129,10 +134,15 @@
   color: #ffffff;
   font-size: 0.9rem;
   text-decoration: underline 2px rgba(0, 0, 0, 0);
-  transition: text-decoration-color 500ms;
+  transition: text-decoration-color 600ms;
+}
+.parentATags:hover {
+  scale: 1.2;
+  transition: scale 0.33s linear 0s;
 }
 .profileATags:hover {
-  text-decoration-color: rgb(80, 1, 1);
+  text-decoration-color: rgb(207, 0, 0);
+  scale: 1.7;
 }
 
 #root > div > nav > div.navRight > div.darkmode > svg > path {
@@ -145,17 +155,36 @@
 
 .aboutAllContainer {
   width: 100%;
+  background: -webkit-linear-gradient(
+    66deg,
+    rgb(184, 179, 179) 0%,
+    rgb(253, 98, 220) 51%,
+    rgb(255, 197, 38) 100%
+  );
+  height: 100vh;
   padding-top: 4rem;
   padding-bottom: 4rem;
   max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .aboutAllContainerDark {
-  background-color: #232228;
+  background: -webkit-linear-gradient(
+    66deg,
+    rgba(54, 54, 54, 1) 0%,
+    rgba(54, 5, 43, 1) 51%,
+    rgba(126, 0, 0, 1) 100%
+  );
   width: 100%;
+  height: 100vh;
   padding-top: 4rem;
   padding-bottom: 4rem;
   max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .aboutContainer {
@@ -173,18 +202,31 @@
   min-height: 250px;
 }
 
-.aboutName {
-  font-size: 1.5rem;
-  font-style: italic;
-}
 .aboutNameDark {
   color: #dfdfdf;
-  font-size: 1.5rem;
+  font-size: 4rem;
+  font-style: italic;
+}
+
+.abouth5 {
+  font-style: italic;
+  color: #000b1a;
+}
+
+.abouth5Dark {
+  color: #ada9bd;
   font-style: italic;
 }
 
 .aboutWelcomeDark {
+  font-style: italic;
   color: #ada9bd;
+  font-size: 1.5rem;
+}
+
+.aboutWelcome {
+  font-style: italic;
+  font-size: 1.5rem;
 }
 
 .rightSide {
@@ -235,7 +277,7 @@
   margin: 1rem 1rem 1rem 0rem;
   min-width: 150px;
   text-align: center;
-  border: 1px solid #3730a3;
+  border: 1px solid #01000c;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -244,8 +286,9 @@
   gap: 10px;
   cursor: pointer;
   text-decoration: none;
-  color: #3730a3;
+  color: #050049;
   border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.14) 0px 3px 8px;
 }
 .socialADark {
   margin: 1rem 1rem 1rem 0rem;
@@ -301,7 +344,14 @@
 /* Skills */
 
 .SkillsContainer {
-  background-color: rgb(255, 255, 255);
+  background: -webkit-linear-gradient(
+    66deg,
+    rgb(255, 198, 198) 0%,
+    rgb(127, 160, 253) 51%,
+    rgb(91, 3, 192) 100%
+  );
+  height: 100vh;
+  /* height: 100vw; */
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -313,6 +363,7 @@
 }
 
 .skillsh2 {
+  /* font-style: italic; */
   font-size: 3rem;
   font-weight: 500;
   font-family: "Inter", sans-serif;
@@ -338,12 +389,19 @@
 
 .skillsname {
   text-transform: uppercase;
-  color: #777777;
+  color: #ffffff;
+  font-weight: 500;
   margin-top: 10px;
 }
 
 .SkillsContainerDark {
-  background-color: #27262c;
+  height: 100vh;
+  background: -webkit-linear-gradient(
+    90deg,
+    rgb(92, 25, 209) 0%,
+    rgb(36, 0, 128) 43%,
+    rgb(3, 0, 59) 100%
+  );
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -351,11 +409,12 @@
   text-align: center;
   padding-bottom: 3rem;
   min-width: 100%;
-  min-height: 350px;
+  /* min-height: 350px; */
 }
 
 .skillsh2Dark {
-  font-size: 3rem;
+  font-style: italic;
+  font-size: 3.3rem;
   font-weight: 500;
   font-family: "Inter", sans-serif;
   color: #dfdfdf;
@@ -365,30 +424,47 @@
 
 .profileAllContainer {
   width: 100%;
-  background: #f4f4f4;
+  background: -webkit-linear-gradient(
+    66deg,
+    rgb(184, 179, 179) 0%,
+    rgb(253, 98, 220) 51%,
+    rgb(255, 197, 38) 100%
+  );
+  display: flex;
+  align-items: center;
+  height: 100vh;
   padding-top: 3rem;
   padding-bottom: 8rem;
 }
 
 .profileAllContainerDark {
   width: 100%;
-  background: #232228;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: -webkit-linear-gradient(
+    66deg,
+    rgba(54, 54, 54, 1) 0%,
+    rgba(54, 5, 43, 1) 51%,
+    rgba(126, 0, 0, 1) 100%
+  );
   padding-top: 3rem;
   padding-bottom: 8rem;
 }
 
 .Profileh2 {
   text-align: center;
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-weight: 500;
   font-family: "Inter", sans-serif;
   margin-bottom: 5rem;
 }
 
 .profilePersonalInformation {
-  color: #ea2678;
+  color: #1a000b;
   margin-bottom: 10px;
-  font-weight: 400;
+  font-weight: 600;
 }
 .profilePersonalInformationDark {
   color: #f0f0f0;
@@ -411,7 +487,12 @@
   min-width: 600px;
   border-radius: 0.6rem;
   padding: 1rem;
-  /* background-color: #b31b1b; */
+  background: -webkit-linear-gradient(
+    75deg,
+    rgb(226, 178, 178) 0%,
+    rgb(238, 136, 216) 45%,
+    rgb(255, 57, 57) 100%
+  );
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -492,7 +573,11 @@
   min-width: 600px;
   border-radius: 0.6rem;
   padding: 1rem;
-  background-color: #484651;
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(23, 0, 113, 1) 0%,
+    rgba(81, 0, 81, 1) 100%
+  );
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -530,7 +615,7 @@
 
 .Profileh2Dark {
   text-align: center;
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-weight: 500;
   font-family: "Inter", sans-serif;
   margin-bottom: 5rem;
@@ -563,7 +648,13 @@
 /* Projects */
 
 .ProjectsAllContainer {
-  background-color: rgb(255, 255, 255);
+  background: -webkit-linear-gradient(
+    66deg,
+    rgb(255, 198, 198) 0%,
+    rgb(127, 160, 253) 51%,
+    rgb(91, 3, 192) 100%
+  );
+  min-height: 200vh;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -571,7 +662,13 @@
   padding: 3rem 3rem;
 }
 .ProjectsAllContainerDark {
-  background-color: #27262c;
+  background: -webkit-linear-gradient(
+    60deg,
+    rgb(3, 0, 59) 0%,
+    rgb(36, 0, 128) 43%,
+    rgb(92, 25, 209) 100%
+  );
+  min-height: 200vh;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -600,6 +697,10 @@
     padding: 0;
     padding-top: 30px;
   }
+  .ProjectsAllContainerDark {
+    padding: 0;
+    padding-top: 30px;
+  }
   .projectsContainer {
     justify-content: center;
   }
@@ -616,10 +717,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 700px;
+  min-height: max-content;
   border-radius: 0.6rem;
   padding: 1rem;
-  background-color: #ffffff;
+  background: -webkit-linear-gradient(
+    66deg,
+    rgba(255, 198, 198, 0.712) 0%,
+    rgb(156, 180, 247) 51%,
+    rgba(144, 52, 250, 0.747) 100%
+  );
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
@@ -630,17 +736,21 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 700px;
+  /* min-height: 700px; */
   border-radius: 0.6rem;
   padding: 1rem;
-  background-color: #232228;
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(23, 0, 113, 1) 0%,
+    rgba(0, 34, 19, 1) 100%
+  );
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
 .projectsImgs {
-  max-width: 350px;
-  max-height: 300px;
-  min-height: 300px;
+  max-width: 15vw;
+  max-height: 15vw;
+  min-height: 15vw;
   padding-top: 1rem;
 }
 
@@ -790,9 +900,15 @@
 }
 .FooterAllContainerDark {
   width: 100%;
-  background-color: #232228;
-  padding: 3rem 0 4rem;
-  max-width: 60%;
+  height: 100vh;
+  background: -webkit-linear-gradient(
+    66deg,
+    rgb(31, 1, 1) 0%,
+    rgba(54, 5, 43, 1) 51%,
+    rgb(95, 0, 0) 100%
+  );
+  /* padding: 3rem 0 4rem; */
+  /* max-width: 60%; */
   margin: 0 auto;
   display: flex;
   /* background-color: aqua; */
@@ -804,9 +920,15 @@
 
 .FooterAllContainer {
   width: 100%;
-  background-color: #f4f4f4;
-  padding: 3rem 0 4rem;
-  max-width: 60%;
+  height: 100vh;
+  background: -webkit-linear-gradient(
+    66deg,
+    rgb(184, 179, 179) 0%,
+    rgb(253, 98, 220) 51%,
+    rgb(255, 197, 38) 100%
+  );
+  /* padding: 3rem 0 4rem;
+  max-width: 60%; */
   margin: 0 auto;
   display: flex;
   /* background-color: aqua; */
@@ -823,9 +945,9 @@
   margin-bottom: 1.5rem;
   background: -webkit-linear-gradient(
     337deg,
-    rgba(45, 20, 108, 1) 10%,
-    rgb(0, 94, 42) 42%,
-    rgba(86, 0, 86, 1) 78%
+    rgb(45, 0, 160) 10%,
+    rgb(0, 107, 48) 42%,
+    rgb(0, 75, 85) 78%
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -851,7 +973,7 @@
   font-size: 1.4rem;
   margin-bottom: 1.5rem;
   font-weight: 500;
-  color: #1f2937;
+  color: #00193b;
 }
 
 .footerdescriptionDark {
@@ -869,9 +991,9 @@
 
 .footerEmailATags {
   font-family: "Alegreya", serif;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   text-decoration: none;
-  color: #af0c48;
+  color: #52001e;
   font-weight: 500;
 }
 
@@ -893,37 +1015,26 @@
   font-size: 2rem;
 }
 
-#root
-  > div
-  > div.FooterAllContainer
-  > div
-  > div.iconsdiv
-  > a:nth-child(1)
-  > svg
-  > path {
-  color: black;
+#contact > div > div > div.iconsdiv > a:nth-child(1) > svg > path {
+  color: rgb(255, 255, 255);
 }
-
-#root
-  > div
-  > div.FooterAllContainer
-  > div
-  > div.iconsdiv
-  > a:nth-child(2)
-  > svg
-  > path {
-  color: #0a66c2;
+#contact > div > div > div.iconsdiv > a:nth-child(2) > svg > path {
+  color: rgb(10, 102, 194);
 }
-
-#root
-  > div
-  > div.FooterAllContainer
-  > div
-  > div.iconsdiv
-  > a:nth-child(3)
-  > svg
-  > path {
-  color: #ff0000;
+#contact > div > div > div.iconsdiv > a:nth-child(3) > svg > path {
+  color: rgb(255, 30, 30);
+}
+#contact > div > div > div.iconsdiv > a:nth-child(1) > svg:hover {
+  scale: 1.18;
+  opacity: 0.85;
+}
+#contact > div > div > div.iconsdiv > a:nth-child(2) > svg:hover {
+  scale: 1.18;
+  opacity: 0.85;
+}
+#contact > div > div > div.iconsdiv > a:nth-child(3) > svg:hover {
+  scale: 1.18;
+  opacity: 0.85;
 }
 
 #root
@@ -935,7 +1046,7 @@
   > a:nth-child(1)
   > svg
   > path {
-  color: #777777;
+  color: #ffffff;
 }
 
 #root
@@ -947,7 +1058,7 @@
   > a:nth-child(2)
   > svg
   > path {
-  color: #0a66c2;
+  color: #0281ff;
 }
 
 #root
@@ -959,5 +1070,5 @@
   > a:nth-child(3)
   > svg
   > path {
-  color: #ff0000;
+  color: #ff0808;
 }

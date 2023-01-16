@@ -310,7 +310,7 @@ let resumeData = {
       {
         skillname: "Cypress",
         skillurl:
-          "https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/ih3wgcjnztxkqpvy8t8b",
+          "https://iili.io/HYviEMv.png",
       },
     ],
     portfolio: [
