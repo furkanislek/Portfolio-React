@@ -3,7 +3,6 @@ import Social from "./Social";
 import { useSelector } from "react-redux";
 function About({ props }) {
   const { dark } = useSelector((state) => state.site);
-  console.log(props.imagebaseurl);
   return (
     <div id="profile" className={dark ? "aboutAllContainerDark" : "aboutAllContainer"}>
       

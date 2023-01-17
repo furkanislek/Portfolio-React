@@ -3,9 +3,11 @@ import { useSelector } from "react-redux";
 
 function Skills({ props }) {
   const { dark } = useSelector((state) => state.site);
-  console.log(props.skills);
   return (
-    <div id="skills" className={dark ? "SkillsContainerDark" : "SkillsContainer"}>
+    <div
+      id="skills"
+      className={dark ? "SkillsContainerDark" : "SkillsContainer"}
+    >
       <div>
         <h2 className={dark ? "skillsh2Dark" : "skillsh2"}>
           {props.skillsTitle}
@@ -13,9 +15,14 @@ function Skills({ props }) {
       </div>
       <div className="skillsflexContainer">
         {props.skills.map((skills, index) => (
-          <div style={{textDecoration: 'none' }}>
+          <div style={{ textDecoration: "none" }}>
             <div>
-              <img className="skillsImg" key={index} alt="png" src={skills.skillurl} />
+              <img
+                className="skillsImg"
+                key={index}
+                alt="png"
+                src={skills.skillurl}
+              />
             </div>
             <div key={index} className="skillsname">
               {skills.skillname}

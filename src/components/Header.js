@@ -8,7 +8,6 @@ import {FaRegLightbulb} from "react-icons/fa";
 
 
 function Header({ props }) {
-  console.log("tema : ");
   const dispatch = useDispatch();
   const handleLanguage = () => {
     dispatch(setLanguage());
@@ -19,7 +18,6 @@ function Header({ props }) {
     dispatch(setDarkMode());
   };
 
-  console.log("dilSecenegi ", site.language);
 
   return (
     <div >

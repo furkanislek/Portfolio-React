@@ -3,8 +3,7 @@ import { useSelector } from "react-redux";
 
 function Profile({ props }) {
   const { dark } = useSelector((state) => state.site);
-  console.log("dark mode : ", dark);
-  console.log(props.profileArticle.title);
+ 
   return (
     <div
       id="about"

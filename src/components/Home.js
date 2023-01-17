@@ -13,7 +13,6 @@ function Home() {
   const site = useSelector((state) => state.site);
   const dispatch = useDispatch();
   const dilSecenegi = site.language ? resumeData["en"] : resumeData["tr"];
-  console.log("dilSecenegi", dilSecenegi);
 
   const AllContainer = styled.div`
     background-color: #f4f4f4;
