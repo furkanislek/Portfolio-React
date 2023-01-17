@@ -757,6 +757,14 @@
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
+@media (max-width : 600px){
+  .projectsImgs{
+
+    min-width: 60vw;
+    min-height: 60vw !important;
+  }
+}
+
 .projectsImgs {
   max-width: 15vw;
   max-height: 15vw;
