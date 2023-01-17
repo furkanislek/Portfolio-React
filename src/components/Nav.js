@@ -115,7 +115,7 @@ function Nav({ props }) {
           <div className="darkmode" onClick={handleDarkMode}>
             {!site.dark ? (
               <FaRegLightbulb
-              className="hamburgerLight"
+                className="hamburgerLight"
                 style={{
                   marginRight: "20px",
                   paddingTop: "10px",
@@ -161,19 +161,19 @@ function Nav({ props }) {
           <div>
             <ul className="hamburgerUl">
               <li>
-                <a href="#profile">Profile</a>
+                <a href="#profile">{props.navbar.profile}</a>
               </li>
               <li>
-                <a href="#skills">Skills</a>
+                <a href="#skills">{props.navbar.skills}</a>
               </li>
               <li>
-                <a href="#about">About</a>
+                <a href="#about">{props.navbar.about}</a>
               </li>
               <li>
-                <a href="#projects">Projects</a>
+                <a href="#projects">{props.navbar.projects}</a>
               </li>
               <li>
-                <a href="#contact">Hire me</a>
+                <a href="#contact">{props.navbar.contact}</a>
               </li>
             </ul>
           </div>
