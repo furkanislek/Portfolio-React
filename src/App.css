@@ -370,6 +370,13 @@
   font-family: "Inter", sans-serif;
 }
 
+@media (max-width : 500px) {
+  .skillsflexContainer{
+    width: 80%;
+    padding: 50px 50px;
+  }
+}
+
 .skillsflexContainer {
   margin-top: 2rem;
   display: flex;
