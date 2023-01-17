@@ -4,7 +4,7 @@ export const site = createSlice({
 
   name: "siteSettings",
   initialState: {
-    dark: false,
+    dark: true,
     language: true,
   },
   reducers: {
