@@ -61,7 +61,7 @@
   align-items: center;
   position: fixed;
   background-color: #5247e6;
-  padding: 0.6rem 1rem;
+  padding: 0.6rem 0;
   box-shadow: rgba(153, 153, 153, 0.2) 0px 7px 29px 0px;
 }
 .hamburgerMenuAllContainerDark {
@@ -72,7 +72,7 @@
   align-items: center;
   position: fixed;
   background-color: #020025;
-  padding: 0.6rem 1rem;
+  padding: 0.6rem 0;
   box-shadow: rgba(153, 153, 153, 0.2) 0px 7px 29px 0px;
 }
 #nav2 > div > svg > path {
@@ -81,6 +81,7 @@
 .hamburgerFlexContainer {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   /* min-width: 500px; */
   text-align: center;
 }
@@ -114,6 +115,11 @@
   #nav1 {
     /* previous styles */
     display: none;
+  }
+
+  #nav2 > div > div.darkmode > svg {
+    font-size: 1.5rem;
+    /* padding-top: 12px !important; */
   }
 
   #nav2 {
@@ -370,8 +376,8 @@
   font-family: "Inter", sans-serif;
 }
 
-@media (max-width : 500px) {
-  .skillsflexContainer{
+@media (max-width: 500px) {
+  .skillsflexContainer {
     width: 80%;
     padding: 50px 50px;
   }
@@ -757,9 +763,8 @@
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
-@media (max-width : 600px){
-  .projectsImgs{
-
+@media (max-width: 600px) {
+  .projectsImgs {
     min-width: 60vw;
     min-height: 60vw !important;
   }

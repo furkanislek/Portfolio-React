@@ -115,6 +115,7 @@ function Nav({ props }) {
           <div className="darkmode" onClick={handleDarkMode}>
             {!site.dark ? (
               <FaRegLightbulb
+              className="hamburgerLight"
                 style={{
                   marginRight: "20px",
                   paddingTop: "10px",
