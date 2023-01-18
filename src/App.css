@@ -76,7 +76,7 @@
   box-shadow: rgba(153, 153, 153, 0.2) 0px 7px 29px 0px;
 }
 #nav2 > div > svg > path {
-  color: white;
+  fill: white !important;
 }
 .hamburgerFlexContainer {
   display: flex;
@@ -350,6 +350,21 @@
   > path {
   color: rgb(247, 247, 247);
 }
+
+#profile > div > div.leftSide > div:nth-child(4) > div > a > svg {
+  fill: #f5f4f4 !important;
+}
+
+#root
+  > div
+  > div.ProjectsAllContainerDark
+  > div
+  > div
+  > div.dataUrls
+  > a
+  > svg {
+    fill: #d8d8d8;
+  }
 /* Skills */
 
 .SkillsContainer {
@@ -766,9 +781,15 @@
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
+@media (max-width: 1000px) {
+  .projectsImgs {
+    min-width: 90%;
+    min-height: 40vw !important;
+  }
+}
 @media (max-width: 600px) {
   .projectsImgs {
-    min-width: 60vw;
+    min-width: 90%;
     min-height: 60vw !important;
   }
 }
@@ -1041,14 +1062,14 @@
   font-size: 2rem;
 }
 
-#contact > div > div > div.iconsdiv > a:nth-child(1) > svg > path {
-  color: rgb(255, 255, 255);
+#contact > div > div > div.iconsdiv > a:nth-child(1) > svg  {
+  fill: rgb(255, 255, 255) !important;
 }
-#contact > div > div > div.iconsdiv > a:nth-child(2) > svg > path {
-  color: rgb(10, 102, 194);
+#contact > div > div > div.iconsdiv > a:nth-child(2) > svg  {
+  fill: rgb(10, 102, 194) !important;
 }
-#contact > div > div > div.iconsdiv > a:nth-child(3) > svg > path {
-  color: rgb(255, 30, 30);
+#contact > div > div > div.iconsdiv > a:nth-child(3) > svg  {
+  fill: rgb(255, 30, 30) !important;
 }
 #contact > div > div > div.iconsdiv > a:nth-child(1) > svg:hover {
   scale: 1.18;
@@ -1061,40 +1082,4 @@
 #contact > div > div > div.iconsdiv > a:nth-child(3) > svg:hover {
   scale: 1.18;
   opacity: 0.85;
-}
-
-#root
-  > div
-  > div.FooterParentDark
-  > div
-  > div
-  > div.iconsdiv
-  > a:nth-child(1)
-  > svg
-  > path {
-  color: #ffffff;
-}
-
-#root
-  > div
-  > div.FooterParentDark
-  > div
-  > div
-  > div.iconsdiv
-  > a:nth-child(2)
-  > svg
-  > path {
-  color: #0281ff;
-}
-
-#root
-  > div
-  > div.FooterParentDark
-  > div
-  > div
-  > div.iconsdiv
-  > a:nth-child(3)
-  > svg
-  > path {
-  color: #ff0808;
 }

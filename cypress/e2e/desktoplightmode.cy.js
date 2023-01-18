@@ -1,11 +1,5 @@
 /* eslint-disable no-undef */
 describe("Desktop Light Mode Test", () => {
-    before(() => {
-        cy.visit("http://localhost:3000/");
-        cy.get(
-          "#nav1 > div.navRight > div.darkmode > svg > path:nth-child(2)"
-        ).click();
-    })
   it("Menu Light Mode", () => {
     cy.visit("http://localhost:3000/");
     cy.get(
@@ -58,11 +52,14 @@ describe("Desktop Light Mode Test", () => {
     );
   });
   it("Hire Me Light Mode", () => {
-   
-    cy.get("#contact").should(
+    cy.visit("http://localhost:3000/");
+    cy.get(
+      "#nav1 > div.navRight > div.darkmode > svg > path:nth-child(2)"
+    ).click();
+    cy.get("#contact > div").should(
       "have.css",
       "background-image",
-      "-webkit-linear-gradient(66deg, rgb(255, 198, 198) 0%, rgb(127, 160, 253) 51%, rgb(91, 3, 192) 100%)"
+      "-webkit-linear-gradient(66deg, rgb(184, 179, 179) 0%, rgb(253, 98, 220) 51%, rgb(255, 197, 38) 100%)"
     );
   });
 });
