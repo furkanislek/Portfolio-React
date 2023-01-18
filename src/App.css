@@ -107,7 +107,7 @@
   text-decoration: none;
 }
 
-#nav2 > div > div.darkmode > svg > path {
+#nav2 > div > div.darkmode > svg  {
   fill: yellow !important;
 }
 
