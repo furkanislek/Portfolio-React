@@ -21,7 +21,7 @@ function Projects({ props }) {
             className={!dark ? "portfolioCards" : "portfolioCardsDark"}
             key={index}
           >
-            <div>
+            <div style={{width : "80%"}}>
               <a href={data.projectUrl} target="_blank" rel="noreferrer">
                 <img className="projectsImgs" src={data.imgurl} alt="img" />
               </a>
