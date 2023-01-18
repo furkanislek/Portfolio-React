@@ -27,8 +27,6 @@ function Home() {
     <AllContainer className={dark ? "dark" : ""}>
       <Nav props={dilSecenegi} />
       <About props={dilSecenegi} />
-
-
       <Skills props={dilSecenegi} />
       <Profile props={dilSecenegi} />
       <Projects props={dilSecenegi} />

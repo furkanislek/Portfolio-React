@@ -62,4 +62,45 @@ describe("Desktop Light Mode Test", () => {
       "-webkit-linear-gradient(66deg, rgb(184, 179, 179) 0%, rgb(253, 98, 220) 51%, rgb(255, 197, 38) 100%)"
     );
   });
+  it("Text Colors", () => {
+    cy.visit("http://localhost:3000/");
+    cy.get(
+      "#nav1 > div.navRight > div.darkmode > svg > path:nth-child(2)"
+    ).click();
+    cy.get("#profile > div > div.leftSide > p").should(
+      "have.css",
+      "color",
+      "rgb(0, 11, 26)"
+    );
+
+    cy.get("#profile > div > div.leftSide > h5").should(
+      "have.css",
+      "color",
+      "rgb(0, 11, 26)"
+    );
+
+    cy.get(
+      "#skills > div.skillsflexContainer > div:nth-child(1) > div.skillsname"
+    ).should("have.css", "color", "rgb(255, 255, 255)");
+
+    cy.get("#skills > div:nth-child(1) > h2").should(
+      "have.css",
+      "color",
+      "rgb(4, 0, 63)"
+    );
+
+    cy.get("#about > div > div > div.profileBox > h5").should(
+      "have.css",
+      "color",
+      "rgb(26, 0, 11)"
+    );
+
+    cy.get("#projects > h2").should(
+      "have.css",
+      "color",
+      "rgb(4, 0, 63)"
+    );
+
+
+  });
 });

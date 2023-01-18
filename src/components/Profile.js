@@ -3,7 +3,7 @@ import { useSelector } from "react-redux";
 
 function Profile({ props }) {
   const { dark } = useSelector((state) => state.site);
- 
+
   return (
     <div
       id="about"
@@ -26,11 +26,9 @@ function Profile({ props }) {
             </h5>
             {props.kisiselBilgilerIcerik.map((data) => (
               <div className="boxinbox">
-                {/* className="darkPofileTitles" */}
                 <div>
                   <b className={dark && "PofileTitlesdark"}>{data.title}</b>
                 </div>
-                {/* className="profileDataDark" */}
                 <div className={dark && "profileDataDark"}>{data.data}</div>
               </div>
             ))}
