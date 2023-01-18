@@ -107,6 +107,9 @@
   text-decoration: none;
 }
 
+#nav1 > div > div.darkmode > svg  {
+  fill: yellow !important;
+}
 #nav2 > div > div.darkmode > svg  {
   fill: yellow !important;
 }
