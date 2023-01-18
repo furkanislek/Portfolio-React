@@ -108,7 +108,7 @@
 }
 
 #nav2 > div > div.darkmode > svg > path {
-  color: yellow !important;
+  fill: yellow !important;
 }
 
 @media screen and (max-width: 900px) {
