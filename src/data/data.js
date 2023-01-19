@@ -7,6 +7,7 @@ let resumeData = {
     projectsTitle: "Projeler",
     aboutTitle: "Hakkımda",
     email: "E-Posta",
+    mail : "furkanakifislek@gmail.com",
     welcome: "Selam",
     kisiselBilgilerIcerik: [
       { title: "Doğum Tarihi", data: "01.11.1998" },
@@ -169,6 +170,7 @@ let resumeData = {
     skillsTitle: "Skills",
     aboutTitle: "About Me",
     email: "Email",
+    mail : "furkanakifislek@gmail.com",
     projectsTitle: "Projects",
     welcome: "Hi",
     kisiselBilgilerIcerik: [

@@ -13,7 +13,7 @@ describe("Desktop Dark Mode Test", () => {
     cy.get("#profile").should(
       "have.css",
       "background",
-      'rgba(0, 0, 0, 0) -webkit-linear-gradient(66deg, rgb(68, 32, 32) 0%, rgb(71, 9, 58) 51%, rgb(126, 0, 0) 100%) repeat scroll 0% 0% / auto padding-box border-box'
+      'rgba(0, 0, 0, 0) -webkit-linear-gradient(66deg, rgb(122, 35, 35) 0%, rgb(75, 4, 59) 51%, rgb(95, 0, 0) 100%) repeat scroll 0% 0% / auto padding-box border-box'
     );
   });
   it("Skills Dark Mode", () => {
@@ -37,7 +37,7 @@ describe("Desktop Dark Mode Test", () => {
     cy.get("#projects").should(
       "have.css",
       "background",
-      'rgba(0, 0, 0, 0) -webkit-linear-gradient(60deg, rgb(3, 0, 59) 0%, rgb(36, 0, 128) 43%, rgb(92, 25, 209) 100%) repeat scroll 0% 0% / auto padding-box border-box'
+      'rgba(0, 0, 0, 0) -webkit-linear-gradient(60deg, rgb(0, 58, 48) 0%, rgb(36, 0, 128) 43%, rgb(49, 0, 47) 100%) repeat scroll 0% 0% / auto padding-box border-box'
     );
   });
   it("Hire Me Dark Mode", () => {

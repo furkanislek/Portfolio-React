@@ -1070,6 +1070,7 @@
   text-decoration: none;
   color: #52001e;
   font-weight: 500;
+  cursor: url("../public/pointinghand.svg"), auto;
 }
 
 .footerEmailATagsDark {
@@ -1078,6 +1079,7 @@
   text-decoration: none;
   color: #cccccc;
   font-weight: 500;
+  cursor: url("../public/pointinghand.svg"), auto;
 }
 
 .FooterContainer > .iconsdiv {

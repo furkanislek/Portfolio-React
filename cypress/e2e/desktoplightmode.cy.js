@@ -48,7 +48,7 @@ describe("Desktop Light Mode Test", () => {
     cy.get("#projects").should(
       "have.css",
       "background-image",
-      "-webkit-linear-gradient(66deg, rgb(255, 198, 198) 0%, rgb(127, 160, 253) 51%, rgb(91, 3, 192) 100%)"
+      "-webkit-linear-gradient(66deg, rgb(235, 155, 228) 0%, rgb(127, 160, 253) 67%, rgb(216, 28, 28) 100%)"
     );
   });
   it("Hire Me Light Mode", () => {

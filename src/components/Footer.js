@@ -28,7 +28,7 @@ function Footer({ props }) {
               target="_blank"
               className={!dark ? "footerEmailATags" : "footerEmailATagsDark"}
             >
-              furkanakifislek@gmail.com
+              {props.mail}
             </a>
           </div>
           <div className="iconsdiv">
