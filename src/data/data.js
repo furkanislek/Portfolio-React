@@ -1,5 +1,6 @@
 let resumeData = {
   tr: {
+    navbarName: "Furkan Akif İŞLEK",
     karanlıkMode: "Karanlık Mod",
     kisiselBilgiler: "Kişisel Bilgiler",
     skillsTitle: "Program Bilgisi",
@@ -162,6 +163,7 @@ let resumeData = {
     },
   },
   en: {
+    navbarName: "Furkan Akif ISLEK",
     karanlıkMode: "Karanlık Mod",
     kisiselBilgiler: "Personal Information",
     skillsTitle: "Skills",

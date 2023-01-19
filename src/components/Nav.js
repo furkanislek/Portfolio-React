@@ -34,7 +34,7 @@ function Nav({ props }) {
           <h2 style={{ color: "white" }}>
             <a style={{ color: "white", textDecoration: "none" }} href="#">
               {" "}
-              Furkan Akif İŞLEK
+              {props.navbarName}
             </a>
           </h2>
         </div>
