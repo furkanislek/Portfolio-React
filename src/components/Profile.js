@@ -24,8 +24,8 @@ function Profile({ props }) {
             >
               {props.kisiselBilgiler}
             </h5>
-            {props.kisiselBilgilerIcerik.map((data) => (
-              <div className="boxinbox">
+            {props.kisiselBilgilerIcerik.map((data, index) => (
+              <div key={index} className="boxinbox">
                 <div>
                   <b className={dark && "PofileTitlesdark"}>{data.title}</b>
                 </div>

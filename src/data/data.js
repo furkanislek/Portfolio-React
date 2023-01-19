@@ -78,7 +78,7 @@ let resumeData = {
     ],
     portfolio: [
       {
-        name: "React Credit Calculate",
+        name: "React Kredi Hesaplama",
         description:
           "React Kredi Hesaplama uygulaması. Bu projede ReactJs kullanılarak kredi tutarı, taksit sayısı, aylık faiz oranı ve taksit aralığına göre aylık taksit tutarı ve toplam geri ödeme tutarı belirlenebilmektedir. ",
         tags: ["reactjs", "javascript"],
@@ -261,7 +261,7 @@ let resumeData = {
         site: "View Site",
       },
       {
-        name: "Hafıza Kartları Oyunu",
+        name: "Memory Card Game",
         description:
           "If you want to satisfy your hunger by playing a memory game, you should definitely play this game. You win the game by finding the same type of foods in this game, which was made using ReactJs.",
         tags: ["react", "javascript", "game", "memorycard"],
@@ -283,7 +283,7 @@ let resumeData = {
         site: "View Site",
       },
       {
-        name: "Async Redux Hobiler",
+        name: "Async Redux Hobbys",
         description:
           "A small web application that offers hobbies that can relieve your boredom using Async Redux. The data obtained from the Bored Api can be saved and liked using the redux state management method.",
         tags: ["react", "redux", "axios"],

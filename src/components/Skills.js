@@ -15,7 +15,7 @@ function Skills({ props }) {
       </div>
       <div className="skillsflexContainer">
         {props.skills.map((skills, index) => (
-          <div style={{ textDecoration: "none" }}>
+          <div key={index} style={{ textDecoration: "none" }}>
             <div>
               <img
                 className="skillsImg"
