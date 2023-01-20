@@ -30,78 +30,80 @@ function Nav({ props }) {
         className={dark ? "NavAllContainerDark" : "NavAllContainer"}
       >
         {" "}
-        <div className="navLeft">
-          <h2 style={{ color: "white" }}>
-            <a style={{ color: "white", textDecoration: "none" }} href="#">
-              {" "}
-              {props.navbarName}
-            </a>
-          </h2>
-        </div>
-        <div className="navRight">
-          <div className="parentATags">
-            <a className="profileATags" href="#profile">
-              {props.navbar.profile}
-            </a>
+        <div className="navbarCenter">
+          <div className="navLeft">
+            <h2 style={{ color: "white" }}>
+              <a style={{ color: "white", textDecoration: "none" }} href="#">
+                {" "}
+                {props.navbarName}
+              </a>
+            </h2>
           </div>
-          <div className="parentATags">
-            <a className="profileATags" href="#skills">
-              {props.navbar.skills}
-            </a>
-          </div>
+          <div className="navRight">
+            <div className="parentATags">
+              <a className="profileATags" href="#profile">
+                {props.navbar.profile}
+              </a>
+            </div>
+            <div className="parentATags">
+              <a className="profileATags" href="#skills">
+                {props.navbar.skills}
+              </a>
+            </div>
 
-          <div className="parentATags">
-            <a className="profileATags" href="#about">
-              {props.navbar.about}
-            </a>
-          </div>
-          <div className="parentATags">
-            <a className="profileATags" href="#projects">
-              {props.navbar.projects}
-            </a>
-          </div>
-          <div className="parentATags">
-            <a className="profileATags" href="#contact">
-              {props.navbar.contact}
-            </a>
-          </div>
-          <div className="darkmode" onClick={handleDarkMode}>
-            {!site.dark ? (
-              <FaRegLightbulb
-                id="lightBtn"
-                style={{
-                  marginRight: "20px",
-                  paddingTop: "10px",
-                  cursor: "pointer",
-                }}
-              />
-            ) : (
-              <MdDarkMode
-                style={{
-                  marginRight: "20px",
-                  paddingTop: "10px",
-                  cursor: "pointer",
-                }}
-              />
-            )}
-          </div>
-          <div>
-            <div
-              onClick={handleLanguage}
-              className="languageBtn"
-              value={site.language}
-            >
-              {site.language ? (
-                <Flag
-                  style={{ paddingTop: "10px", cursor: "pointer" }}
-                  country="GB"
+            <div className="parentATags">
+              <a className="profileATags" href="#about">
+                {props.navbar.about}
+              </a>
+            </div>
+            <div className="parentATags">
+              <a className="profileATags" href="#projects">
+                {props.navbar.projects}
+              </a>
+            </div>
+            <div className="parentATags">
+              <a className="profileATags" href="#contact">
+                {props.navbar.contact}
+              </a>
+            </div>
+            <div className="darkmode" onClick={handleDarkMode}>
+              {!site.dark ? (
+                <FaRegLightbulb
+                  id="lightBtn"
+                  style={{
+                    marginRight: "20px",
+                    paddingTop: "10px",
+                    cursor: "pointer",
+                  }}
                 />
               ) : (
-                <Flag
-                  style={{ paddingTop: "10px", cursor: "pointer" }}
-                  country="TR"
+                <MdDarkMode
+                  style={{
+                    marginRight: "20px",
+                    paddingTop: "10px",
+                    cursor: "pointer",
+                  }}
                 />
               )}
+            </div>
+            <div>
+              <div
+                onClick={handleLanguage}
+                className="languageBtn"
+                value={site.language}
+              >
+                {site.language ? (
+                  <Flag
+                    style={{ paddingTop: "10px", cursor: "pointer" }}
+                    country="GB"
+                  />
+                ) : (
+                  <Flag
+                    style={{ paddingTop: "10px", cursor: "pointer" }}
+                    country="TR"
+                  />
+                )}
+              </div>
             </div>
           </div>
         </div>
