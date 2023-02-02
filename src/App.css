@@ -398,7 +398,7 @@
     rgb(101, 135, 228) 51%,
     rgb(91, 3, 192) 100%
   );
-  height: 100vh;
+  min-height: 100vh;
   /* height: 100vw; */
   display: flex;
   align-items: center;
@@ -451,7 +451,7 @@
 }
 
 .SkillsContainerDark {
-  height: 100vh;
+  min-height: 100vh;
   background: -webkit-linear-gradient(
     90deg,
     rgb(92, 25, 209) 0%,
@@ -465,6 +465,7 @@
   text-align: center;
   padding-bottom: 3rem;
   min-width: 100%;
+
   /* min-height: 350px; */
 }
 
