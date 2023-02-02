@@ -84,8 +84,7 @@ let resumeData = {
       },
       {
         skillname: "ExpressJS",
-        skillurl:
-          "https://i.ibb.co/nr3xGsf/pngwing-com.png",
+        skillurl: "https://i.ibb.co/nr3xGsf/pngwing-com.png",
       },
       {
         skillname: "SQLite",
@@ -254,6 +253,20 @@ let resumeData = {
       {
         skillname: "Cypress",
         skillurl: "https://iili.io/HYviEMv.png",
+      },
+      {
+        skillname: "NodeJS",
+        skillurl:
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1200px-Node.js_logo.svg.png",
+      },
+      {
+        skillname: "ExpressJS",
+        skillurl: "https://i.ibb.co/nr3xGsf/pngwing-com.png",
+      },
+      {
+        skillname: "SQLite",
+        skillurl:
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Sqlite-square-icon.svg/2048px-Sqlite-square-icon.svg.png",
       },
     ],
     portfolio: [
